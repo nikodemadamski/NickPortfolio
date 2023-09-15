@@ -96,5 +96,18 @@
             $('#more-projects').fadeIn(300);
         });
     });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const korokSeedElement = document.querySelector(".korok-seed");
+      
+        korokSeedElement.addEventListener("mouseenter", function() {
+          document.body.classList.add("korok-blur");
+        });
+      
+        korokSeedElement.addEventListener("mouseleave", function() {
+          document.body.classList.remove("korok-blur");
+        });
+      });
+      
 
 })(jQuery);
