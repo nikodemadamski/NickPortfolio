@@ -43,21 +43,21 @@
   display: flex;
   max-width: 800px;
   height: 300px;
-  transition: all 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(0,0,0,0.2);
 }
 
 .project-inner {
   display: flex;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.project-inner:hover {
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
 }
 
 .project-image {
   flex: 1;
+
   display: flex;
   justify-content: flex-start;  /* Align to the left */
   align-items: center;
@@ -95,3 +95,4 @@
   max-height: 70%;
   object-fit: cover;
 }
+
