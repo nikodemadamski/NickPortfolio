@@ -58,7 +58,6 @@
 
 .project-image {
   flex: 1;
-  background-color: #f2f2f2;  /* Optional: background color */
   display: flex;
   justify-content: flex-start;  /* Align to the left */
   align-items: center;
@@ -92,7 +91,7 @@
 }
 
 .project-image img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 60%;
+  max-height: 60%;
   object-fit: cover;
 }
