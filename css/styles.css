@@ -39,3 +39,35 @@
     font-size: 24px; /* or any size you find comfortable */
     font-weight: bold; /* optional, for emphasis */
 }
+.project {
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info h3,
+.project-info p,
+.project-info a {
+  /* your styles here, for example: */
+  color: #333;
+  font-size: 18px;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
