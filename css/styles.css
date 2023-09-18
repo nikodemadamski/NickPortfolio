@@ -39,65 +39,56 @@
     font-size: 24px; /* or any size you find comfortable */
     font-weight: bold; /* optional, for emphasis */
 }
+.background-alt {
+  background-color: #f0f0f0;
+}
+
+.heading {
+  color: #333;
+  font-size: 24px;
+}
+
 .project {
-  display: flex;
-  max-width: 800px;
-  height: 300px;
-}
-
-.project-inner {
-  display: flex;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(0,0,0,0.2);
-}
-
-.project-inner:hover {
-  box-shadow: 0 0 40px rgba(0,0,0,0.2);
-}
-
-.project-image {
-  flex: 1;
-
-  display: flex;
-  justify-content: flex-start;  /* Align to the left */
-  align-items: center;
-  overflow: hidden;
-}
-
-.project-info {
-  flex: 1;
+  background-color: white;
+  border: 1px solid #ccc;
   padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;  /* or whatever width you want */
+  margin: 15px auto;  /* auto margins for horizontal centering */
+  text-align: left;
+}
+
+.project a {
+  color: blue;
+}
+
+.hoverable:hover {
+  background-color: #e6f7ff;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: blur(0);
+}
+
+.container {
+  filter: blur(0);
+}
+
+.container:hover .hoverable {
+  filter: blur(4px);
+}
+
+.container:hover .hoverable:hover {
+  filter: blur(0);
+  z-index: 1;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.project-info h3,
-.project-info p,
-.project-info a {
-  color: #333;
-  font-size: 18px;
-}
-
-.project-info a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007bff;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
-}
-
-.project-image img {
-  max-width: 30%;
-  max-height: 70%;
-  object-fit: cover;
+  align-items: center;  /* This centers the children horizontally */
+  justify-content: center;  /* This centers the children vertically */
 }
 
