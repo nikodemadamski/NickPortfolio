@@ -48,9 +48,11 @@
   box-shadow: 0 0 40px rgba(0,0,0,0.2);
 }
 
-.project-image img {
-  width: 100%;
-  height: auto;
+.project-image {
+  width: 100%; /* You can set this to whatever you prefer */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Maximum height */
+  overflow: hidden; /* Hide the overflow */
 }
 
 .project-info h3,
@@ -70,4 +72,9 @@
 
 .project-info a:hover {
   text-decoration: underline;
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without stretching */
 }
